@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Chemichemi Restaurant - Levels Hotel Nairobi</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <div class="nav__bar">
+          <div class="logo">
+            <a href="index.html"><img src="assets/Levels Hotel.png" alt="logo" /></a>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#service">Services</a></li>
+          <li><a href="index.html#explore">Explore</a></li>
+          <li><a href="rooms.html">Rooms</a></li>
+          <li><a href="restaurant.html">Restaurant</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="btn nav__btn">Book Now</button>
+      </nav>
+      <div class="section__container header__container">
+        <h1>Chemichemi Restaurant</h1>
+      </div>
+    </header>
+
+    <section class="section__container restaurant__container">
+      <div class="restaurant">
+        <div class="restaurant__item">
+          <h2>Dining Experience</h2>
+          <p>
+            Chemichemi Restaurant offers an exceptional dining experience with a variety of delicious cuisines
+            prepared by our expert chefs. Whether you prefer a formal setting or a casual atmosphere,
+            we have the perfect space for you to enjoy your meal.
+          </p>
+          <div class="scroll-container">
+            <img src="{{ url_for('static', filename='images/group1.jpg') }}" class="img-fluid" alt="Group 1">
+            <img src="{{ url_for('static', filename='images/group2.jpg') }}" class="img-fluid" alt="Group 2">
+            <img src="{{ url_for('static', filename='images/group3.jpg') }}" class="img-fluid" alt="Group 3">
+        </div>
+      </div>
+        <div class="restaurant__item">
+          <h2>Private Events</h2>
+          <p>
+            Host your private events in our elegantly designed spaces that can accommodate small to large groups.
+            From birthday parties to corporate gatherings, our team will ensure your event is a success.
+          </p>
+          <div class="scroll-container">
+            <img src="{{ url_for('static', filename='images/group1.jpg') }}" class="img-fluid" alt="Group 1">
+            <img src="{{ url_for('static', filename='images/group2.jpg') }}" class="img-fluid" alt="Group 2">
+            <img src="{{ url_for('static', filename='images/group3.jpg') }}" class="img-fluid" alt="Group 3">
+        </div>
+        </div>
+        <div class="restaurant__item">
+          <h2>Chef's Special</h2>
+          <p>
+            Indulge in our Chef's Special dishes that are crafted with the finest ingredients and utmost care.
+            Our menu features a variety of options to suit every palate, ensuring a memorable dining experience.
+          </p>
+          <div class="scroll-container">
+            <img src="{{ url_for('static', filename='images/group1.jpg') }}" class="img-fluid" alt="Group 1">
+            <img src="{{ url_for('static', filename='images/group2.jpg') }}" class="img-fluid" alt="Group 2">
+            <img src="{{ url_for('static', filename='images/group3.jpg') }}" class="img-fluid" alt="Group 3">
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="logo">
+            <a href="index.html#home"><img src="assets/Levels Hotel.png" alt="logo" /></a>
+          </div>
+          <p class="section__description">
+            At Levels Hotel Lavington, we redefine the essence of hospitality 
+            with our exquisite accommodations, world-class service, 
+             and a host of amenities tailored just for you. Whether visiting for business or pleasure, 
+            your stay with us is more than just a booking—it's an experience that will linger in your memory long after you leave.
+          </p>
+          <button class="btn" href="#">Book Now</button>
+        </div>
+        <div class="footer__col">
+          <h4>QUICK LINKS</h4>
+          <ul class="footer__links">
+            <li><a href="#">Browse Destinations</a></li>
+            <li><a href="#">Special Offers & Packages</a></li>
+            <li><a href="#">Room Types & Amenities</a></li>
+            <li><a href="#">Customer Reviews & Ratings</a></li>
+            <li><a href="#">Travel Tips & Guides</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>OUR SERVICES</h4>
+          <ul class="footer__links">
+            <li><a href="https://linktr.ee/levelshotel">Dining and Private Events</a></li>
+            <li><a href="https://linktr.ee/levelshotel">Flexible Booking Options</a></li>
+            <li><a href="https://linktr.ee/levelshotel">Airport Transfers</a></li>
+            <li><a href="https://standupcollective.co.ke/">Nairobi LaughBar</a></li>
+            <li><a href="https://linktr.ee/levelshotel">CarWash</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>CONTACT US</h4>
+          <ul class="footer__links">
+            <li><a href="https://linktr.ee/levelshotel">levelshotel.co.ke</a></li>
+            <div class="googlebox">
+              <h3>Google Maps</h3>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15955.204622548828!2d36.7619334!3d-1.2937964!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1b15fa2d08cd%3A0x67f3d393d5dc00a4!2sLevels%20Residence%20Hotel!5e0!3m2!1sen!2ske!4v1683710921026!5m2!1sen!2ske" width="450" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </ul>
+          <div class="footer__socials">
+            <a href="https://web.facebook.com/levelslounge254/?_rdc=1&_rdr"><img src="assets/facebook.png" alt="facebook" /></a>
+            <a href="https://www.instagram.com/levels_hotel/"><img src="assets/instagram.png" alt="instagram" /></a>
+            <a href="#"><img src="assets/youtube.png" alt="youtube" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__rights">
+        <p>&copy; 2023 Levels Hotel. All rights reserved.</p>
+        <div class="credits">
+          <p>
+            Designed by 
+            <a href="link">Whitespace</a> | Developed by 
+            <a href="link">Whitespace</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
