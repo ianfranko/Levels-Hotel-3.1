@@ -68,3 +68,44 @@ ScrollReveal().reveal(".service__list li", {
   interval: 500,
   origin: "right",
 });
+// scripts.js
+document.getElementById('bookingForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const roomType = document.getElementById('roomType').value;
+  const checkIn = document.getElementById('checkIn').value;
+  const checkOut = document.getElementById('checkOut').value;
+  const guests = document.getElementById('guests').value;
+  const name = document.getElementById('fullname').value;
+  const email = document.getElementById('email').value;
+  const phone = document.getElementById('phone').value;
+
+  // Basic validation
+  if (!roomType || !checkIn || !checkOut || !guests || !name || !email || !phone) {
+      alert("Please fill in all fields.");
+      return;
+  }
+
+  // Optional: Validate dates (e.g., check-out must be after check-in)
+  if (new Date(checkIn) >= new Date(checkOut)) {
+      alert("Check-out date must be after check-in date.");
+      return;
+  }
+
+  // Here you would typically send the data to a backend server
+  // For demonstration, we'll just log it to the console
+  console.log({
+      roomType,
+      checkIn,
+      checkOut,
+      guests,
+      fullname,
+      email,
+      phone
+  });
+
+  alert("Booking submitted successfully!");
+
+  // Optionally, reset the form
+  document.getElementById('bookingForm').reset();
+});

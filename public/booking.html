@@ -6,7 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css" />
-    <title>Chemichemi Restaurant - Levels Hotel Nairobi</title>
+    <title>Booking - Levels Hotel Nairobi</title>
   </head>
   <body>
     <header class="header">
@@ -23,59 +23,61 @@
           <li><a href="index.html#home">Home</a></li>
           <li><a href="index.html#about">About</a></li>
           <li><a href="index.html#service">Services</a></li>
-          <li><a href="index.html#explore">Explore</a></li>
           <li><a href="rooms.html">Rooms</a></li>
           <li><a href="restaurant.html">Restaurant</a></li>
+          <li><a href="events.html">Events</a></li>
           <li><a href="gallery.html">Gallery</a></li>
           <li><a href="contact.html">Contact</a></li>
+          <li><a href="booking.html">Booking</a></li>
         </ul>
         <button class="btn nav__btn">Book Now</button>
       </nav>
       <div class="section__container header__container">
-        <h1>Chemichemi Restaurant</h1>
+        <h1>Book Your Stay</h1>
       </div>
     </header>
 
-    <section class="section__container restaurant__container">
-      <div class="restaurant">
-        <div class="restaurant__item">
-          <h2>Dining Experience</h2>
-          <p>
-            Chemichemi Restaurant offers an exceptional dining experience with a variety of delicious cuisines
-            prepared by our expert chefs. Whether you prefer a formal setting or a casual atmosphere,
-            we have the perfect space for you to enjoy your meal.
-          </p>
-          <div class="scroll-container">
-            <img src="{{ url_for('static', filename='images/group1.jpg') }}" class="img-fluid" alt="Group 1">
-            <img src="{{ url_for('static', filename='images/group2.jpg') }}" class="img-fluid" alt="Group 2">
-            <img src="{{ url_for('static', filename='images/group3.jpg') }}" class="img-fluid" alt="Group 3">
+    <section class="section__container booking__container">
+      <h2>Reservation Form</h2>
+      <form class="booking__form" action="booking_confirmation.html" method="POST">
+        <div class="form__group">
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" name="fullName" required />
         </div>
-      </div>
-        <div class="restaurant__item">
-          <h2>Private Events</h2>
-          <p>
-            Host your private events in our elegantly designed spaces that can accommodate small to large groups.
-            From birthday parties to corporate gatherings, our team will ensure your event is a success.
-          </p>
-          <div class="scroll-container">
-            <img src="{{ url_for('static', filename='images/group1.jpg') }}" class="img-fluid" alt="Group 1">
-            <img src="{{ url_for('static', filename='images/group2.jpg') }}" class="img-fluid" alt="Group 2">
-            <img src="{{ url_for('static', filename='images/group3.jpg') }}" class="img-fluid" alt="Group 3">
+        <div class="form__group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required />
         </div>
+        <div class="form__group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" required />
         </div>
-        <div class="restaurant__item">
-          <h2>Chef's Special</h2>
-          <p>
-            Indulge in our Chef's Special dishes that are crafted with the finest ingredients and utmost care.
-            Our menu features a variety of options to suit every palate, ensuring a memorable dining experience.
-          </p>
-          <div class="scroll-container">
-            <img src="{{ url_for('static', filename='images/group1.jpg') }}" class="img-fluid" alt="Group 1">
-            <img src="{{ url_for('static', filename='images/group2.jpg') }}" class="img-fluid" alt="Group 2">
-            <img src="{{ url_for('static', filename='images/group3.jpg') }}" class="img-fluid" alt="Group 3">
+        <div class="form__group">
+          <label for="checkin">Check-in Date</label>
+          <input type="date" id="checkin" name="checkin" required />
         </div>
+        <div class="form__group">
+          <label for="checkout">Check-out Date</label>
+          <input type="date" id="checkout" name="checkout" required />
         </div>
-      </div>
+        <div class="form__group">
+          <label for="roomType">Room Type</label>
+          <select id="roomType" name="roomType" required>
+            <option value="single">Standard Room</option>
+            <option value="double">Deluxe Room</option>
+            <option value="suite">Executive Room</option>
+          </select>
+        </div>
+        <div class="form__group">
+          <label for="guests">Number of Guests</label>
+          <input type="number" id="guests" name="guests" min="1" required />
+        </div>
+        <div class="form__group">
+          <label for="specialRequests">Special Requests</label>
+          <textarea id="specialRequests" name="specialRequests" rows="4"></textarea>
+        </div>
+        <button class="btn" type="submit">Submit Reservation</button>
+      </form>
     </section>
 
     <footer class="footer">
@@ -87,7 +89,7 @@
           <p class="section__description">
             At Levels Hotel Lavington, we redefine the essence of hospitality 
             with our exquisite accommodations, world-class service, 
-             and a host of amenities tailored just for you. Whether visiting for business or pleasure, 
+            and a host of amenities tailored just for you. Whether visiting for business or pleasure, 
             your stay with us is more than just a booking—it's an experience that will linger in your memory long after you leave.
           </p>
           <button class="btn" href="#">Book Now</button>
@@ -143,6 +145,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="script.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>

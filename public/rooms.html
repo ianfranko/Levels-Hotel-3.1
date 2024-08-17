@@ -21,14 +21,14 @@
         </div>
         <ul class="nav__links" id="nav-links">
           <li><a href="index.html#home">Home</a></li>
-          <li><a href="index.html#about">About</a></li>
-          <li><a href="index.html#service">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#service">Services</a></li>
           <li><a href="rooms.html">Rooms</a></li>
           <li><a href="gallery.html">Gallery</a></li>
           <li><a href="restaurant.html">Restaurant</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="https://linktr.ee/levelshotel">Contact</a></li>
         </ul>
-        <button class="btn nav__btn">Book Now</button>
+        <button class="btn nav__btn"><a href="booking.html">Book Now</a></button>
       </nav>
       <div class="section__container header__container">
         <h1>Our Rooms</h1>
@@ -42,12 +42,15 @@
         <!-- Repeat Room Card structure for each room -->
         <!-- Executive Room -->
         <div class="room__card">
-          <div class="room__card__image">
-            <img src="assets/Images/Executive Room.jpeg" alt="Executive Room" />
-            <div class="room__card__icons">
-              <span><i class="ri-heart-fill"></i></span>
-              <span><i class="ri-paint-fill"></i></span>
-              <span><i class="ri-shield-star-line"></i></span>
+          <div class="room__card__carousel">
+            <div class="carousel-slide">
+              <img src="assets/Images/Executive_Room_1.jpeg" alt="Executive Room Image 1">
+              <img src="assets/Images/Executive_Room_2.jpeg" alt="Executive Room Image 2">
+              <img src="assets/Images/Executive_Room_3.jpeg" alt="Executive Room Image 3">
+            </div>
+            <div class="carousel-controls">
+              <span class="prev">&#10094;</span>
+              <span class="next">&#10095;</span>
             </div>
           </div>
           <div class="room__card__details">
@@ -57,49 +60,58 @@
               Perfect for the discerning traveler seeking privacy and pampering.
             </p>
             <h5>Starting from <span>Ksh 6000/night</span></h5>
-            <button class="btn">Book Now</button>
+            <button class="btn"><a href="booking.html">Book Now</a></button>
           </div>
         </div>
+        
         <!-- Deluxe Room -->
         <div class="room__card">
-          <div class="room__card__image">
-            <img src="assets/Rooms/Deluxeroom.jpeg" alt="Deluxe Room" />
-            <div class="room__card__icons">
-              <span><i class="ri-heart-fill"></i></span>
-              <span><i class="ri-paint-fill"></i></span>
-              <span><i class="ri-shield-star-line"></i></span>
+          <div class="room__card__carousel">
+            <div class="carousel-slide">
+              <img src="assets/Rooms/Deluxe_Room_1.jpeg" alt="Deluxe Room Image 1">
+              <img src="assets/Rooms/Deluxe_Room_2.jpeg" alt="Deluxe Room Image 2">
+              <img src="assets/Rooms/Deluxe_Room_3.jpeg" alt="Deluxe Room Image 3">
+            </div>
+            <div class="carousel-controls">
+              <span class="prev">&#10094;</span>
+              <span class="next">&#10095;</span>
             </div>
           </div>
           <div class="room__card__details">
             <h4>Deluxe Room</h4>
             <p>
-               Designed for the modern traveler, these rooms feature elegant furnishings, cutting-edge technology, and thoughtful amenities.
-               The rooms are spacious with working space; fast internet and free parking space.
+              Designed for the modern traveler, these rooms feature elegant furnishings, cutting-edge technology, and thoughtful amenities.
+              The rooms are spacious with working space; fast internet and free parking space.
             </p>
             <h5>Starting from <span>Ksh 5000/night</span></h5>
-            <button class="btn" href="https://levels.hustlesasa.shop/?product=46863">Book Now</button>
+            <button class="btn"><a href="booking.html">Book Now</a></button>
           </div>
         </div>
+        
         <!-- Standard Room -->
         <div class="room__card">
-          <div class="room__card__image">
-            <img src="assets/Images/standard room.jpeg" alt="Standard Room" />
-            <div class="room__card__icons">
-              <span><i class="ri-heart-fill"></i></span>
-              <span><i class="ri-paint-fill"></i></span>
-              <span><i class="ri-shield-star-line"></i></span>
+          <div class="room__card__carousel">
+            <div class="carousel-slide">
+              <img src="assets/Images/Standard_Room_1.jpeg" alt="Standard Room Image 1">
+              <img src="assets/Images/Standard_Room_2.jpeg" alt="Standard Room Image 2">
+              <img src="assets/Images/Standard_Room_3.jpeg" alt="Standard Room Image 3">
+            </div>
+            <div class="carousel-controls">
+              <span class="prev">&#10094;</span>
+              <span class="next">&#10095;</span>
             </div>
           </div>
           <div class="room__card__details">
-            <h4>Standard Rooms</h4>
+            <h4>Standard Room</h4>
             <p>
               Ideally suited for business travelers seeking comfort and convenience close to Nairobi's central business district.
-               These rooms provide a tranquil, well-equipped space with all the essential amenities needed for a productive and restful stay.
+              These rooms provide a tranquil, well-equipped space with all the essential amenities needed for a productive and restful stay.
             </p>
             <h5>Starting from <span>Ksh 4500/night</span></h5>
-            <button class="btn" href="#">Book Now</button>
+            <button class="btn"><a href="booking.html">Book Now</a></button>
           </div>
         </div>
+        
       </div>
     </section>
 
@@ -115,7 +127,7 @@
              and a host of amenities tailored just for you. Whether visiting for business or pleasure, 
             your stay with us is more than just a booking—it's an experience that will linger in your memory long after you leave.
           </p>
-          <button class="btn" href="https://standupcollective.co.ke/">Book Now</button>
+          <button class="btn"><a href="booking.html">Book Now</a></button>
         </div>
         <div class="footer__col">
           <h4>QUICK LINKS</h4>
@@ -150,3 +162,25 @@
             <a href="https://web.facebook.com/levelslounge254/?_rdc=1&_rdr"><img src="assets/facebook.png" alt="facebook" /></a>
             <a href="https://www.instagram.com/levels_hotel/"><img src="assets/instagram.png" alt="instagram" /></a>
             <a href="#"><img src="assets/youtube.png" alt="youtube">
+            </div>
+          </div>
+        </div>
+        <div class="footer__rights">
+          <p>&copy; 2023 Levels Hotel. All rights reserved.</p>
+          <div class="credits">
+            <p>
+              Designed by 
+              <a href="link">Whitespace</a> | Developed by 
+              <a href="link">Whitespace</a>
+            </p>
+          </div>
+        </div>
+      </footer>
+  
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+      <script src="script.js"></script>
+    </body>
+  </html>
+  

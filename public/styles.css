@@ -69,6 +69,7 @@
 
 .btn:hover {
   background-color: var(--primary-color-dark);
+  color: #ffffff;
 }
 
 img {
@@ -620,38 +621,87 @@ nav {
   }
 }
 /* Chemichemi Restaurant Specific Styles */
-.restaurant__container {
-  background: #f9f9f9;
-  padding: 4rem 0;
+.restaurant__intro {
+  background-color: #f4f4f4;
+  padding: 60px 20px;
 }
 
-.restaurant {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+.restaurant__intro h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
 }
 
-.restaurant__item {
-  text-align: center;
-  padding: 2rem;
-  background: #fff;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+.restaurant__intro p {
+  font-size: 18px;
+  color: #555;
 }
 
-.restaurant__item img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
+.btn-primary {
+  background-color: #ff4500;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  text-decoration: none;
 }
 
-.restaurant__item h2 {
-  margin-top: 1rem;
-  font-size: 1.5rem;
+.btn-primary:hover {
+  background-color: #e03e00;
 }
 
-.restaurant__item p {
-  font-size: 1rem;
-  margin-top: 0.5rem;
+.restaurant__features {
+  background-color: #fff;
+  padding: 40px 20px;
+  
+}
+
+.restaurant__features h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.restaurant__gallery {
+  background-color: #f4f4f4;
+  padding: 40px 20px;
+}
+
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+}
+
+.scroll-container img {
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.restaurant__nairobi-laughbar {
+  background-color: #fff;
+  padding: 40px 20px;
+}
+
+.restaurant__nairobi-laughbar h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.restaurant__nairobi-laughbar p {
+  font-size: 18px;
+  color: #555;
+}
+
+.restaurant__reservation {
+  background-color: #f4f4f4;
+  padding: 40px 20px;
+}
+
+.restaurant__reservation h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.restaurant__reservation p {
+  font-size: 18px;
   color: #555;
 }
 /* Events Page Specific Styles */
@@ -687,4 +737,78 @@ nav {
 .event__item p {
   margin-top: 1rem;
   color: #555;
+}
+
+.gallery__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 0 1rem;
+}
+
+.gallery__item {
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery__item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.gallery__item:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .gallery__container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+/* Carousel container */
+.room__card__carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+/* Slides */
+.carousel-slide {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+  min-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Controls */
+.carousel-controls {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.carousel-controls span {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.carousel-controls span:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }

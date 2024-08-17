@@ -1,0 +1,263 @@
+/* General Styles */
+:root {
+    --primary-color: #e82574;
+    --primary-color-dark: #bc1c5c;
+    --text-dark: #0c0a09;
+    --text-light: #78716c;
+    --white: #ffffff;
+    --max-width: 1200px;
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  .section__container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 5rem 1rem;
+  }
+  
+  .section__header {
+    margin-bottom: 0.5rem;
+    position: relative;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: var(--text-dark);
+  }
+  
+  .section__subheader::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translate(1rem, -50%);
+    height: 2px;
+    width: 4rem;
+    background-color: var(--primary-color);
+  }
+  
+  .section__header {
+    max-width: 600px;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 3rem;
+    color: var(--text-dark);
+  }
+  
+  .section__description {
+    max-width: 600px;
+    margin-bottom: 1rem;
+    color: var(--text-light);
+  }
+  
+  
+  .nav__bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  
+  .nav__menu__btn {
+    align-items: center;
+    font-size: 24px;
+  }
+  
+  .nav__links {
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav__links li {
+    display: inline;
+  }
+  
+  .nav__links a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .nav__btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  
+  
+  .header__container {
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .restaurant__container {
+    margin-top: 20px;
+  }
+  
+  .restaurant__item {
+    margin-bottom: 40px;
+  }
+  
+  .restaurant__item h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .restaurant__item p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .special-features, .testimonials, .partnership {
+    padding: 40px 20px;
+  }
+  
+  .special-features h2, .testimonials h2, .partnership h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .feature, .testimonial {
+    margin-bottom: 20px;
+  }
+  
+  .feature h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .testimonial p {
+    font-size: 16px;
+    color: #555;
+    margin: 10px 0;
+  }
+  
+  .partnership img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .scroll-container {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+  }
+  
+  .scroll-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .special-features, .testimonials, .partnership {
+    padding: 40px 20px;
+  }
+  
+  .special-features h2, .testimonials h2, .partnership h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .col-md-4 {
+    width: 100%;
+    max-width: 33.3333%;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+  
+  .feature {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .testimonial {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .partnership img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  footer {
+    background-color: #f8f9fa;
+    padding: 40px 20px;
+  }
+  
+  .footer__container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .footer__col {
+    flex: 1;
+    padding: 0 20px;
+  }
+  
+  .footer__links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer__links li {
+    margin-bottom: 10px;
+  }
+  
+  .footer__links a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .footer__socials {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .footer__socials a img {
+    max-width: 30px;
+    height: auto;
+  }
+  
+  .footer__rights {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .credits {
+    margin-top: 10px;
+  }
+  
+  .credits a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
