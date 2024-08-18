@@ -246,56 +246,7 @@ nav {
     padding: 50px 20px;
     text-align: center;
   }
-  .events__grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    justify-content: center;
-  }
-  .event__card {
-    background: #f5f5f5;
-    border-radius: 8px;
-    overflow: hidden;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  .event__image img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-  .event__day h3 {
-    font-size: 24px;
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    margin: 0;
-  }
-  .event__details {
-    padding: 20px;
-  }
-  .event__details h4 {
-    font-size: 22px;
-    margin-bottom: 10px;
-  }
-  .event__details p {
-    font-size: 16px;
-    margin-bottom: 15px;
-    color: #666;
-  }
-  .event__details button {
-    background-color: #333;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  .event__details button:hover {
-    background-color: #555;
-  }
+ 
   .footer {
     background: #333;
     color: white;
@@ -549,39 +500,5 @@ nav {
 .restaurant__item p {
   font-size: 1rem;
   margin-top: 0.5rem;
-  color: #555;
-}
-/* Events Page Specific Styles */
-.events__container {
-  background: #f9f9f9;
-  padding: 4rem 0;
-}
-
-.events {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-}
-
-.event__item {
-  text-align: center;
-  padding: 2rem;
-  background: #fff;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-.event__item img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
-.event__item h2 {
-  margin-top: 1.5rem;
-  color: #333;
-}
-
-.event__item p {
-  margin-top: 1rem;
   color: #555;
 }
